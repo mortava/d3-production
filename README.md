@@ -1,4 +1,4 @@
-# 🧡 Cloudflare Vibe SDK
+# TRACE
 
 > **An open source full-stack AI webapp generator** – Deploy your own instance of Cloudflare VibeSDK, an AI vibe coding platform that you can run and customize yourself.
 
