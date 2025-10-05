@@ -1,6 +1,4 @@
-# FROM docker.io/cloudflare/sandbox:0.1.3
 FROM docker.io/cloudflare/sandbox:0.1.3
-# FROM --platform=linux/arm64 docker.io/cloudflare/sandbox:0.1.3
 
 # Install cloudflared and system dependencies in a single layer
 ARG TARGETARCH

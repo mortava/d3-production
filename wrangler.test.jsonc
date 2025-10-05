@@ -1,0 +1,44 @@
+{
+    "name": "d3-test",
+    "main": "worker/index.ts",
+    "compatibility_date": "2024-12-12",
+    "compatibility_flags": ["nodejs_compat"],
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "d3-test-db",
+            "database_id": "test-db-id",
+            "migrations_dir": "migrations",
+            "preview_database_id": "test-db-id"
+        }
+    ],
+    "durable_objects": {
+        "bindings": [
+            {
+                "class_name": "CodeGeneratorAgent",
+                "name": "CodeGenObject"
+            },
+            {
+                "class_name": "UserAppSandboxService",
+                "name": "Sandbox"
+            },
+            {
+                "class_name": "DORateLimitStore",
+                "name": "DORateLimitStore"
+            }
+        ]
+    },
+    "vars": {
+        "ENVIRONMENT": "test"
+    },
+    "migrations": [
+        {
+            "tag": "v1",
+            "new_classes": [
+                "CodeGeneratorAgent",
+                "UserAppSandboxService",
+                "DORateLimitStore"
+            ]
+        }
+    ]
+}
